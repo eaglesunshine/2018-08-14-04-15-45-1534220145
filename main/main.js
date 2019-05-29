@@ -1,18 +1,17 @@
 // Write your cade below:
-
-function RndNum(n){
-    var rnd="";
-    for(var i=0;i<n;i++)
-        rnd+=Math.floor(Math.random()*10);
-    return rnd;
-}
-
-
-  var a,b;
-  a=RndNum(10);
-  b=RndNum(3);
-  console.log(a%b);
-
-
-
-
+module.exports = function main() {
+	var a,b;
+	if (arguments) {
+		if(arguments.length<2)
+			console.log("need more arguments!");
+		else
+		{
+			a=arguments[0];
+			b=arguments[1];
+			c=a%b;
+			onsole.log(c);
+		}
+	}
+	else
+		console.log("need more arguments!");
+};
