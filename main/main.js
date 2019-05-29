@@ -10,8 +10,11 @@
         inputArr.forEach(function(item,index){  
             inputArr[index] = +item;// 转化为数字  
         });  
-        // 下面就可以对数据进行处理......  
-        console.log(inputArr);  
+        // 下面就可以对数据进行处理...... 
+        if(inputArr.length>=2)
+            console.log(inputArr[0]%inputArr[1]); 
+        else
+            console.log("need input more data!");
         inputArr = [];// 清空数组  
         rl.close();  
     });  
